@@ -1,3 +1,5 @@
+package ProjetoJava;
+
 public class Operadores {
     public static <string> void main(String[] args) {
         int idade = 19;

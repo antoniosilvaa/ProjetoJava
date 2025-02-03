@@ -1,18 +1,19 @@
 package ProjetoJava;
 
 public class condicionalSwitch {
-    public static void main(String[] args) {
-        char sexo = 'J';
+    public static <string> void main(String[] args) {
+        char sexo = 'B';
 
         switch (sexo){
-            case 'M':
-                System.out.println("Homem");
+            case 'B':
+                System.out.println("Boy");
                 break;
-            case 'F':
-                System.out.println("Mulher");
+            case 'G':
+                System.out.println("Girl");
                 break;
             default:
-                System.out.println("Inválido");
+                System.out.println("Incorrect");
+                break;
         }
 
     }

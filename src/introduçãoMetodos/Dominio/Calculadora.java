@@ -1,4 +1,4 @@
-package introduçãoMetodos;
+package introduçãoMetodos.Dominio;
 
 public class Calculadora {
     public void somaDoisNumeros(){

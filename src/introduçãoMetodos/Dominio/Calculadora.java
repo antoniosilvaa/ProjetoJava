@@ -19,6 +19,10 @@ public class Calculadora {
             return num1 / num2;
         }
 
+    }
 
+    public void alteraDoisNumeros(int numero1,int numero2){
+        numero1 = 99;
+        numero2 = 23;
     }
 }

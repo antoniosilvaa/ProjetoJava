@@ -1,10 +1,10 @@
 package introduçãoMetodos.Dominio;
 
 public class Funcionario {
-    public String Nome;
-    public int idade;
-    public double[] salarios;
-
+    private String Nome;
+    private int idade;
+    private double[] salarios;
+    private double media = 0;
     public void impressora() {
         System.out.println(this.Nome);
         System.out.println(this.idade);
@@ -21,14 +21,40 @@ public class Funcionario {
         if (salarios == null){
             return;
         }
-        double media = 0;
         for (double salario : salarios){
             media += salario;
         }
         media /= salarios.length;
-        System.out.println("Media salarial " + media);
     }
+
+    public void setNome(String nome) {
+        Nome = nome;
     }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public void setSalarios(double[] salarios) {
+        this.salarios = salarios;
+    }
+
+    public String getNome() {
+        return Nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public double[] getSalarios() {
+        return salarios;
+    }
+
+    public double getMedia() {
+        return media;
+    }
+}
 
 
 

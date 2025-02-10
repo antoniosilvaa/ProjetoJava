@@ -13,7 +13,7 @@ public class CarroTest {
         System.out.println("\n----------");
         carro2.imprime();
         carro2.getVelocidadeMxima();
-        System.out.println("\n--------------");
+        System.out.println("\n-------------");
         carro3.imprime();
         carro3.getVelocidadeMxima();
     }

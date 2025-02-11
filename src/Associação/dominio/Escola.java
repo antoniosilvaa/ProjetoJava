@@ -20,6 +20,7 @@ public class Escola {
         for(Professor professor: professores ){
             System.out.println(professor.getNome());
         }
+
     }
 
     public Professor[] getProfessores() {

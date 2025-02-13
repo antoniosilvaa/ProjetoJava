@@ -11,11 +11,17 @@ public class JogadorTest03 {
         Time time2 = new Time("Santos");
 
         jogador2.setTime(time2);
+
         jogador.setTime(time);
+
         System.out.println("time 1");
+
         jogador.imprime();
+
         System.out.println("");
+
         System.out.println("time 2");
+
         jogador2.imprime();
 
     }

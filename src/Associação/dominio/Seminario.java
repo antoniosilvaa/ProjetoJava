@@ -45,7 +45,7 @@ public class Seminario {
       }
 
       for (Professor professor : professor){
-          System.out.println("Professor: " + professor.getNome());
+          System.out.println("Professor(a): " + professor.getNome());
           System.out.println("Especialidade: " + professor.getEspecialidade());
       }
 

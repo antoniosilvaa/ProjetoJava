@@ -22,7 +22,7 @@ public class HerançaTest01 {
         Funcionario funcionario = new Funcionario();
 
         funcionario.setNome("Bia");
-        funcionario.setCpf("99999999999");
+        funcionario.setCpf("9999999999");
         funcionario.setSalario(2120);
         funcionario.setEndereço(endereço);
         funcionario.imprime();

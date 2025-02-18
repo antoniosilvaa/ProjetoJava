@@ -2,10 +2,17 @@ package Herança.dominio;
 
 
 public class Pessoa {
-    private String nome;
-    private String cpf;
-    private Endereço endereço;
+    protected String nome;
+    protected String cpf;
+    protected Endereço endereço;
+    public Pessoa(String nome){
+        this.nome = nome;
+    }
 
+    public Pessoa(String nome, String cpf){
+        this(nome);
+        this.cpf = cpf;
+    }
     public void imprime(){
         System.out.println(this.endereço.getRua() + " " + this.endereço.getCep());
         System.out.println(this.cpf);

@@ -1,6 +1,6 @@
 package Isobrescrita.dominio;
 
-public class Anime extends Object{
+public class Anime{
     private String nome;
 
     @Override

@@ -7,5 +7,8 @@ public class CarroTest01 {
         Carro carro = new Carro();
 
         System.out.println(Carro.VELOCIDADE_LIMITE);
+        carro.comprador.setNome("luffy");
+        System.out.println(carro.comprador);
+
     }
 }

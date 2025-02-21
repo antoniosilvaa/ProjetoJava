@@ -20,6 +20,4 @@ public class Cliente {
                 ", tipoPagamento: " + tipoPagamento +
                 ", Desconto de: " + tipoPagamento.calcularDesconto(49579);
     }
-
-
 }

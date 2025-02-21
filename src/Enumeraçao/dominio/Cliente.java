@@ -16,7 +16,7 @@ public class Cliente {
         return "Cliente " +
                 "nome: " + nome +
                 ", tipoCliente: " + tipoCliente +
-                ", tipoClienteValor: " + tipoCliente.getValor() +
+                ", tipoClienteValor: " + tipoCliente.VALOR +
                 ", tipoPagamento: " + tipoPagamento;
     }
 

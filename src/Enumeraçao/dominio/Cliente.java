@@ -17,7 +17,8 @@ public class Cliente {
                 "nome: " + nome +
                 ", tipoCliente: " + tipoCliente.getNomeRelatorio() +
                 ", tipoClienteValor: " + tipoCliente.VALOR +
-                ", tipoPagamento: " + tipoPagamento;
+                ", tipoPagamento: " + tipoPagamento +
+                ", Desconto de: " + tipoPagamento.calcularDesconto(450);
     }
 
 

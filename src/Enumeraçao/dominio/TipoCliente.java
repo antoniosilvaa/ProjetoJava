@@ -12,6 +12,7 @@ public enum TipoCliente {
         this.NomeRelatorio = NomeRelatorio;
     }
 
+
     public String getNomeRelatorio() {
         return NomeRelatorio;
     }

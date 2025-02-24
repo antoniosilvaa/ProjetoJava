@@ -10,6 +10,7 @@ public class ProdutoTest {
         Tomate tomate = new Tomate("Cometa", 10);
 
         CalculadoraImposto.CalcularImpostoComputador(computador);
+        System.out.println("--------------------------");
         CalculadoraImposto.CalcularImpostoTomate(tomate);
     }
 }

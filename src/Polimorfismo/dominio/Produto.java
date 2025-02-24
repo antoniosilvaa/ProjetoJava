@@ -9,10 +9,11 @@ public abstract class Produto implements Taxavel{
         Valor = valor;
     }
 
-    @Override
-    public String toString() {
-        return "Produto " +
-                "Nome: '" + Nome +
-                ", Valor: " + Valor;
+    public String getNome() {
+        return Nome;
+    }
+
+    public double getValor() {
+        return Valor;
     }
 }

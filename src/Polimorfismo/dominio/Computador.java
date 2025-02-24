@@ -8,7 +8,6 @@ public class Computador extends Produto{
 
     @Override
     public double calcularImposto() {
-        System.out.print("Imposto: ");
         return this.Valor * imposto;
     }
 }

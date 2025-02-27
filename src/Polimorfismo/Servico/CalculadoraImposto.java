@@ -1,15 +1,12 @@
 package Polimorfismo.Servico;
 
-import Polimorfismo.dominio.Computador;
-import Polimorfismo.dominio.Produto;
-import Polimorfismo.dominio.Televisao;
-import Polimorfismo.dominio.Tomate;
+import Polimorfismo.dominio.*;
 
 public class CalculadoraImposto {
 
 
     public static void CalcularImposto(Produto produto){
-        System.out.println("Relatorio de imposto do Televisão");
+        System.out.println("Relatorio de imposto");
         double imposto = produto.calcularImposto();
         System.out.println("Produto: "+ produto.getNome());
         System.out.println("Valor: "+ produto.getValor());
@@ -17,6 +14,10 @@ public class CalculadoraImposto {
         if (produto instanceof Tomate){
             Tomate tomate = (Tomate) produto;
             System.out.println("Data de validade: " + tomate.getDataValidade());
+        }
+        if (produto instanceof Geladeira) {
+            Geladeira geladeira = (Geladeira) produto;
+            System.out.println("Marca: " + geladeira.getMarca());
         }
     }
 }

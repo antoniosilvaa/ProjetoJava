@@ -3,7 +3,7 @@ package Excecoes.RunTime.Test;
 public class RunTimeExepctionTest02 {
     public static void main(String[] args) {
         try {
-            divisao(1,0);
+            divisao(1,3);
         } catch (RuntimeException e) {
             e.printStackTrace();
         }

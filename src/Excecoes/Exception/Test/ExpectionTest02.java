@@ -14,7 +14,7 @@ public class ExpectionTest02 {
             System.out.println("Arquivo Criado " + isCriado);
         } catch (IOException e){
             e.printStackTrace();
-            throw e;
+            throw new RuntimeException("Problema na hora de criar o arquivo");
         }
     }
 }

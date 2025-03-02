@@ -1,0 +1,2 @@
+java.lang.ArrayIndexOutOfBoundsException
+	at Excecoes.RunTime.Test.RunTimeExepctionTest04.main(RunTimeExepctionTest04.java:9)

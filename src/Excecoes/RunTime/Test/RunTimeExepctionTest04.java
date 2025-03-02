@@ -1,15 +1,20 @@
 package Excecoes.RunTime.Test;
 
+import java.io.FileNotFoundException;
+import java.io.PrintStream;
+
 public class RunTimeExepctionTest04 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
      try {
-         throw new IllegalArgumentException();
+         throw new ArithmeticException();
      }catch (ArrayIndexOutOfBoundsException e){
-         System.out.println("dentro do array");
+         e.printStackTrace(new PrintStream("falha no array"));
      }catch (IllegalArgumentException e){
-         System.out.println("dentro do IllegalArgumentException ");
+         //noinspection CallToPrintStackTrace
+         e.printStackTrace();
      }catch (ArithmeticException e){
-         System.out.println("dentro do ArithmeticException ");
+         //noinspection CallToPrintStackTrace
+         e.printStackTrace();
      }
     }
 }

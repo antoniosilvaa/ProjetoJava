@@ -23,7 +23,7 @@ public class LoginInvalidoExceptionTest01 {
         if (!usernameDB.equals(usernameDigitado) || !senhaDB.equals(senhaDigitada) ){
            throw new LonginInvalidoExceptions("Usuario ou senha ivalidos");
         }else {
-            System.out.println("Usuario logado com sucesso");
+            System.out.println("Usuario logado com sucesso!!");
         }
 
     }

@@ -5,7 +5,7 @@ public class StringPerfomanceTest {
         long inicio = System.currentTimeMillis();
         concatStringBuilder(100_0000);
         long fim = System.currentTimeMillis();
-        System.out.println("tempo  gasto para string " + (fim - inicio) + "ms");
+        System.out.println("tempo  gasto para String " + (fim - inicio) + "ms");
 
          inicio = System.currentTimeMillis();
         concatStringBuffer(100_0000);

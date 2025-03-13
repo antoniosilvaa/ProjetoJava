@@ -6,8 +6,8 @@ import java.util.Date;
 public class CalendarTest01 {
     public static void main(String[] args) {
         Calendar c = Calendar.getInstance();
-        if (c.getFirstDayOfWeek() == Calendar.TUESDAY){
-            System.out.println("Terçou ne papai");
+        if (c.getFirstDayOfWeek() == Calendar.WEDNESDAY){
+            System.out.println("Quartou ne papai");
         }
         System.out.println(c.get(Calendar.DAY_OF_WEEK));
         System.out.println(c.get(Calendar.DAY_OF_MONTH));

@@ -20,9 +20,9 @@ public class RegexTest05 {
         // ()
         // | o(v|c)o ovo |oco
         // . 1.3 = 123, 133, 1@3, 1A3
-        // 
+        //
         String regex = "([\\w0-9\\._-])+@([a-zA-Z])+\\.([a-zA-Z]+)+";
-        String texto= "AntonioF@gmail.com, Beatriz123@hotmail.com, @#$Antonio@email.br, teste@gmail.com.br, teste2@mail";
+        String texto= "AntonioF@gmail.com, Beatriz123@hotmail.com, @#$Antonio@email.br, teste@gmail.com, teste2@mail";
         System.out.println("Email Valido");
         System.out.println("@#$Antonio@email.br".matches(regex));
         System.out.println(Arrays.toString(texto.split(",")));

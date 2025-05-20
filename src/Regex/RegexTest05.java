@@ -20,7 +20,7 @@ public class RegexTest05 {
         // ()
         // | o(v|c)o ovo |oco
         // . 1.3 = 123, 133, 1@3, 1A3
-        //
+        // [dentro do cochetes ^ vira negativo] fora se utiliza para ver as primeiras palavras
         String regex = "([\\w0-9\\._-])+@([a-zA-Z])+\\.([a-zA-Z]+)+";
         String texto= "AntonioF@gmail.com, Beatriz123@hotmail.com, @#$Antonio@email.br, teste@gmail.com, teste2@mail";
         System.out.println("Email Valido");

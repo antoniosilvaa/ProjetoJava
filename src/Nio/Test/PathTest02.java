@@ -15,11 +15,9 @@ public class PathTest02 {
         } else {
             System.out.println("Pasta ja existe");
         }
-        Path subPastaPath = Paths.get("pasta/subpasta");
-        Path subPastaPath2 = Paths.get("pasta2/subpasta");
-        Path filePath = Paths.get(subPastaPath.toString(), "file.txt");
-        Path filePath2 = Paths.get(subPastaPath2.toString(), "file.txt2");
 
+        Path subPastaPath = Paths.get("pasta/subpasta");
+        Path filePath = Paths.get(subPastaPath.toString(), "file.txt");
         if (Files.notExists(subPastaPath)) {
             Path pastaDirectories = Files.createDirectories(subPastaPath);
             System.out.println("Created Directories: " + pastaDirectories);
@@ -30,6 +28,9 @@ public class PathTest02 {
             System.out.println("Subpastas ja criadas");
             System.out.println("File ja criada");
         }
+
+        Path subPastaPath2 = Paths.get("pasta2/subpasta");
+        Path filePath2 = Paths.get(subPastaPath2.toString(), "file.txt2");
         if (Files.notExists(subPastaPath2)) {
             Path pastaDirectories2 = Files.createDirectories(subPastaPath2);
             System.out.println("Created Directories: " + pastaDirectories2);

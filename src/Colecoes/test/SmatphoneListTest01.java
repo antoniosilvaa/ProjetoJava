@@ -18,7 +18,7 @@ public class SmatphoneListTest01 {
         smartPhonesList.add(s2);
         smartPhonesList.add(s3);
 
-        for (SmartPhone smartPhone : smartPhonesList){
+        for (SmartPhone smartPhone : smartPhonesList) {
             System.out.println(smartPhone);
         }
         System.out.println("---------");
@@ -31,7 +31,5 @@ public class SmatphoneListTest01 {
         int indexSmartphone4 = smartPhonesList.indexOf(s4);
 
         System.out.println(smartPhonesList.get(indexSmartphone4));
-
-
     }
 }

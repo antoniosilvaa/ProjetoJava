@@ -18,6 +18,11 @@ public class SmartPhone {
         return serialNumber != null && serialNumber.equals(smartPhone.serialNumber) && marca != null && marca.equals(smartPhone.marca);
     }
 
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
     public String getSerialNumber() {
         return serialNumber;
     }

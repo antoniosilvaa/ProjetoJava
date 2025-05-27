@@ -2,12 +2,10 @@ package Serialization.domain;
 
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-import java.io.Serial;
 import java.io.Serializable;
 
 public class Aluno implements Serializable {
-    @Serial
-    private static final long serialVersionUID = -3621096720687718379L;
+
 
     private Long id;
     private String nome;
@@ -32,7 +30,6 @@ public class Aluno implements Serializable {
     }
 
 
-    @Serial
     private void writeObject(ObjectOutputStream oos) {
         try {
             oos.defaultWriteObject();
@@ -43,7 +40,7 @@ public class Aluno implements Serializable {
     }
 
 
-    @Serial
+
     private void readObject(ObjectInputStream ois) {
         try {
             ois.defaultReadObject();

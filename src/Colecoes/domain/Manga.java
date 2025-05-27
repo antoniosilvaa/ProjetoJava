@@ -5,22 +5,16 @@ import java.util.Objects;
 public class Manga implements Comparable<Manga> {
     private Long id;
     private String nome;
+    private int quantidade;
 
     public Manga(Long id, String nome) {
         this.id = id;
         this.nome = nome;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (o == null || getClass() != o.getClass()) return false;
-        Manga manga = (Manga) o;
-        return Objects.equals(id, manga.id) && Objects.equals(nome, manga.nome);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, nome);
+    public Manga(int quantidade, String nome, Long id) {
+        this(id,nome);
+        this.quantidade = quantidade;
     }
 
     @Override
@@ -28,7 +22,16 @@ public class Manga implements Comparable<Manga> {
         return "Manga{" +
                 "id=" + id +
                 ", nome='" + nome + '\'' +
+                ", quantidade=" + quantidade +
                 '}';
+    }
+
+    public int getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
     }
 
     public Long getId() {
@@ -59,5 +62,17 @@ public class Manga implements Comparable<Manga> {
 
         return this.id.compareTo(outroManga.getId());
 
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Manga manga = (Manga) o;
+        return Objects.equals(id, manga.id) && Objects.equals(nome, manga.nome);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, nome);
     }
 }

@@ -1,8 +1,5 @@
 package Generics.service;
 
-import Generics.dominio.Carro;
-
-import java.util.ArrayList;
 import java.util.List;
 
 public class RentalService <T>{

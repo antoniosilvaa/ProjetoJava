@@ -13,6 +13,11 @@ public class ClasseGenericaTest03 {
         Carro carro = rentalService.buscarObjetosDisponiveis();
         System.out.println("Usanado carro por um mes...");
         rentalService.returnObjects(carro);
+        System.out.println("----------------");
+        RentalService<Barco> rentalService1 = new RentalService<>(barcosDisponiveis);
+        Barco barco = rentalService1.buscarObjetosDisponiveis();
+        System.out.println("Usando Barco por um mês");
+        rentalService1.returnObjects(barco);
 
     }
 }

@@ -21,6 +21,9 @@ public class ComportamentoPorParametroTest02 {
         System.out.println(greenCars);
         System.out.println(yearsBeforeCars);
 
+        List<Integer> nums = List.of(1,2,3,4,5,6,7,8,9,10);
+        System.out.println(filter(nums, num ->num % 2 == 1));
+
     }
     private static <T> List<T> filter (List<T> list, Predicate<T> predicate){
         List <T> filteredList = new ArrayList<>();
